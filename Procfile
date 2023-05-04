@@ -1,1 +1,1 @@
-web: guicorn appCalculo.wsgi --log-file -
+web: guicorn AterramentoCalculo.wsgi --log-file -
