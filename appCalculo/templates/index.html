@@ -10,11 +10,11 @@
     <div>
         <form method='POST'>
             {% csrf_token %}
-            <input name='num_barra' placeholder='Numero de barras'>
-            <input name='l' placeholder='Comprimento da barra em m'>
-            <input name='pa' placeholder='Resistividade do solo em ohm s'>
-            <input name='d' placeholder= 'Diametro da bitola em mm'>
-            <input name='e' placeholder='Distancia entre as barras'>
+            <input name='num_barra' placeholder='Numero de barras' required>
+            <input name='l' placeholder='Comprimento da barra em m' required>
+            <input name='pa' placeholder='Resistividade do solo em ohm s' required>
+            <input name='d' placeholder= 'Diametro da bitola em mm' required>
+            <input name='e' placeholder='Distancia entre as barras' required>
             <button type='submit'>Enviar</button>
         <form>
         {% if reposta1 %}
