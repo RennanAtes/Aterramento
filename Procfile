@@ -1,0 +1,1 @@
+web: guicorn appCalculo.wsgi --log-file -
