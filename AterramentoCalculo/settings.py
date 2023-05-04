@@ -25,8 +25,9 @@ SECRET_KEY = 'django-insecure-c4j#9hr%#d$oyi@c)xl#acns$s=46^(z5ze)*vpd+a=ngp!!*b
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['*']
+ALLOWED_HOSTS = ['*','https://aterramento-production.up.railway.app']
 
+CSRF_TRUSTED_ORIGINS = ['https://aterramento-production.up.railway.app']
 
 # Application definition
 
