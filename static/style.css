@@ -1,7 +1,44 @@
+body{
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    width: 100%;
+    background-color: white;
+}
+
 .box{
     align-items: center;
     justify-content: center;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    padding: 10px;
 }
+
 .blue{
-    color: blue;
+    color: black;
+    text-align: center;
+}
+.box-calc{
+    color: black;
+    padding: 30px;
+    border-radius: 20px;
+    border: 2px solid black;
+}
+.cinput{
+    border: none;
+    border-bottom: 2px solid black;
+    background-color: transparent;
+    margin-bottom: 7px;
+    color: black;
+    width: 100%;
+}
+.button{
+    width: 100%;
+    background-color: black;
+    color: white;
+    border: 2px solid black;
+    padding: 7px;
+    margin-top: 10px;
+    border-radius: 10px;
 }
