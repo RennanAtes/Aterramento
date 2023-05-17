@@ -1,1 +1,1 @@
-web: gunicorn AterramentoCalculo.wsgi --log-file -
+web: gunicorn AterramentoCalculo.wsgi:application --log-file -
