@@ -7,26 +7,28 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CalculoAterramento</title>
     <link rel="stylesheet" href="{% static 'style.css' %}">
-
+    <script href="{% static 'script.js' %}">
+    
 </head>
+
+
+
 <body>
+    <p>Teste</p>
     <div class='box'>
         <h2 class='blue'>Teste</h2>
-        <form method='POST'>
-            {% csrf_token %}
-            <input name='num_barra' placeholder='Numero de barras' required>
-            <input name='l' placeholder='Comprimento da barra em m' required>
-            <input name='pa' placeholder='Resistividade do solo em ohm s' required>
-            <input name='d' placeholder= 'Diametro da bitola em mm' required>
-            <input name='e' placeholder='Distancia entre as barras' required>
-            <button type='submit'>Enviar</button>
-        <form>
-        {% if reposta1 %}
-            <p> {{ reposta1 }} </p>
-        {% endif %}
-        {% if reposta2 %}
-            <p> {{ reposta2 }} </p>
-        {% endif %}
+        <label for="e12">e12:</label>
+        <input type="number" id="e12Input"><br>
+
+        <label for="l">l:</label>
+        <input type="number" id="lInput"><br>
+
+        <label for="d">d:</label>
+        <input type="number" id="dInput"><br>
+
+        <button onclick="calcularResultado()">Calcular</button>
+
+        <p id="resultado"></p>
 
     </div>
 </body>
