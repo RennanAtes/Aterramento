@@ -2,6 +2,5 @@ asgiref==3.6.0
 Babel==2.12.1
 Django==4.2
 numpy==1.24.3
-opencv-python==4.7.0.72
 sqlparse==0.4.4
 whitenoise==6.4.0
